@@ -13,4 +13,10 @@ describe('Character', () => {
     const character = new Character('Spike', 50);
     expect(character.health).toEqual(50);
   });
+
+  test('should correctly return the character object with strength', () =>
+  {
+    const character = new Character('Spike', 50, 70);
+    expect(character.strength).toEqual(70);
+  });
 });
