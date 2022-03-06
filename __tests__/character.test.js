@@ -19,4 +19,10 @@ describe('Character', () => {
     const character = new Character('Spike', 50, 70);
     expect(character.strength).toEqual(70);
   });
+  
+  test('should correctly return the character object with attack', () =>
+  {
+    const character = new Character('Spike', 50, 70, 'Chain');
+    expect(character.attack).toEqual('Chain');
+  });
 });
