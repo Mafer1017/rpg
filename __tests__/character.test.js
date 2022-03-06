@@ -8,9 +8,9 @@ describe('Character', () => {
     expect(character.name).toEqual('Spike');
   });
 
-  // test('should correctly return the character object with health', () =>
-  // {
-  //   const character = new Character(50);
-  //   expect(character.health).toEqual(50);
-  // });
+  test('should correctly return the character object with health', () =>
+  {
+    const character = new Character('Spike', 50);
+    expect(character.health).toEqual(50);
+  });
 });
