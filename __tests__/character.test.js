@@ -31,4 +31,16 @@ describe('Character', () => {
     const character = new Character('Spike', 50, 70, 'Chain', 'Sunlight');
     expect(character.specialAbility).toEqual('Sunlight');
   });
+  
+});
+
+describe('dayWalker', () => {
+
+  test('should correctly create a dayWalker object with a familiar', () =>
+  {
+    const character = new Character('Spike', 50, 70, 'Chain', 'Sunlight');
+    character.dayWalker();
+    expect(character.familiar).toEqual(0);
+  });
+
 });
