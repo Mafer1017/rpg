@@ -30,6 +30,7 @@ describe('undead', () => {
     const character = new Character();
     character.undead();
     expect(character.undeadType).toEqual(0);
+    expect(character.undeadSmell).toEqual(" ");
   });
 
 });
