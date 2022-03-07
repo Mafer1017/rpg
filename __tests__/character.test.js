@@ -31,6 +31,7 @@ describe('undead', () => {
     character.undead();
     expect(character.undeadType).toEqual(0);
     expect(character.undeadSmell).toEqual(" ");
+    expect(character.undeadRealm).toEqual(" ");
   });
 
 });
