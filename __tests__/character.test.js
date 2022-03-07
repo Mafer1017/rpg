@@ -16,7 +16,7 @@ describe('Character', () => {
 describe('dayWalker', () => {
 
   test('should correctly create a dayWalker object with a familiar, and blood', () => {
-    const character = new Character('Spike', 50, 70, 'Chain', 'Sunlight');
+    const character = new Character();
     character.dayWalker();
     expect(character.familiar).toEqual(0);
     expect(character.blood).toEqual(" ");
@@ -27,10 +27,9 @@ describe('dayWalker', () => {
 describe('undead', () => {
 
   test('should correctly create an undead object', () => {
-    // const character = new Character('opium');
-    // character.undead();
-    // expect(character.familiar).toEqual(0);
-    // expect(character.blood).toEqual(" ");
+    const character = new Character();
+    character.undead();
+    expect(character.undeadType).toEqual(0);
   });
 
 });
