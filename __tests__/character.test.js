@@ -23,3 +23,14 @@ describe('dayWalker', () => {
   });
 
 });
+
+describe('undead', () => {
+
+  test('should correctly create an undead object', () => {
+    // const character = new Character('opium');
+    // character.undead();
+    // expect(character.familiar).toEqual(0);
+    // expect(character.blood).toEqual(" ");
+  });
+
+});
