@@ -1,16 +1,21 @@
 export default class Character {
-  constructor (name) {
+  constructor (name, health, strength, attack, specialAbility) {
     this.name = name;
+    this.health = health;
+    this.strength = strength;
+    this.attack = attack;
+    this.specialAbility = specialAbility;
   }
-  // this.health = health;
-  // this.strength = strength;
-  // this.attack = attack;
   
-  // dayWalker() {
+  dayWalker() {
+    this.familiar = 0;
+    this.blood = " ";
+  }
 
-  // }
-
-  // undead() {
-
-  // }
+  
+  undead() {
+    this.undeadType = 0;
+    this.undeadSmell = " ";
+    this.undeadRealm = " ";
+  }
 }
