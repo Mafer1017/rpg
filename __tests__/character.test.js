@@ -55,6 +55,10 @@ describe('battleRollAl', () => {
     expect(character.roll1).toEqual(1);
   });
 
-  
+  test('should roll a 1', () => {
+    const character = new Character();
+    character.battleRollAl();
+    expect(character.roll2).toEqual(1);
+  });
 
 });
