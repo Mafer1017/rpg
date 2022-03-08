@@ -60,5 +60,11 @@ describe('battleRollAl', () => {
     character.battleRollAl();
     expect(character.roll2).toEqual(1);
   });
+  
+  test('should return a property with type of number', () => {
+    const character = new Character();
+    character.battleRollAl();
+    expect(typeof character.roll1).toBe(Number);
+  });
 
 });
