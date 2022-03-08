@@ -36,3 +36,13 @@ describe('undead', () => {
   });
 
 });
+
+describe('levelUp', () => {
+
+  test('should increase level value by 1', () => {
+    const character = new Character();
+    character.levelUp();
+    expect(character.level).toEqual(2);
+  });
+
+});
