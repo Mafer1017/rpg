@@ -9,6 +9,7 @@ describe('Character', () => {
     expect(character.strength).toEqual(70);
     expect(character.attack).toEqual('Chain');
     expect(character.specialAbility).toEqual('Sunlight');
+    expect(character.level).toEqual(1);
   });
   
 });
