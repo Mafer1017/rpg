@@ -48,23 +48,17 @@ describe('levelUp', () => {
 });
 
 describe('battleRollAl', () => {
-
-  test('should roll a 1', () => {
-    const character = new Character();
-    character.battleRollAl();
-    expect(character.roll1).toEqual(1);
-  });
-
-  test('should roll a 1', () => {
-    const character = new Character();
-    character.battleRollAl();
-    expect(character.roll2).toEqual(1);
-  });
   
-  test('should return a property with type of number', () => {
+  test('should return a number greater than or equal to 1', () => {
     const character = new Character();
     character.battleRollAl();
-    expect(typeof character.roll1).toBe(Number);
+    expect(character.roll1).toBeGreaterThanOrEqual(1);
+  });
+
+  test('should return a number less than or equal to 20', () => {
+    const character = new Character();
+    character.battleRollAl();
+    expect(character.roll2).toBeLessThanOrEqual(20);
   });
 
 });
