@@ -62,3 +62,13 @@ describe('battleRollAl', () => {
   });
 
 });
+
+describe('inventoryLimiter', () => {
+  
+  test('should return an empty array', () => {
+    const character = new Character();
+    character.inventoryLimiter();
+    expect(character.bag).toEqual([]);
+  });
+
+});
