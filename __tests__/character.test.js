@@ -71,4 +71,10 @@ describe('inventoryLimiter', () => {
     expect(character.bag).toEqual([]);
   });
 
+  test('should return an array of five items in the bag variable', () => {
+    const character = new Character('billybob', 50, 10, 39, 'jelly bomb');
+    character.bag = [1,2,3,4,5,6,7];
+    character.inventoryLimiter();
+    expect(character.bag).toEqual([1,2,3,4,5]);
+  });
 });
